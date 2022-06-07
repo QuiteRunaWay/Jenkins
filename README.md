@@ -28,12 +28,20 @@
 ![image](https://user-images.githubusercontent.com/92969676/172453106-a2a26af7-a3a4-471c-948a-b8169cee536e.png)
 
 3. Сделать Declarative Pipeline Job, который будет запускать `molecule test` из любого вашего репозитория с ролью.
-4. Перенести Declarative Pipeline в репозиторий в файл `Jenkinsfile`.
-5. Создать Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.
-6. Создать Scripted Pipeline, наполнить его скриптом из [pipeline](./pipeline).
-7. Внести необходимые изменения, чтобы Pipeline запускал `ansible-playbook` без флагов `--check --diff`, если не установлен параметр при запуске джобы (prod_run = True), по умолчанию параметр имеет значение False и запускает прогон с флагами `--check --diff`.
-8. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл `ScriptedJenkinsfile`.
-9. Отправить ссылку на репозиторий с ролью и Declarative Pipeline и Scripted Pipeline.
+
+Успешно:
+
+![image](https://user-images.githubusercontent.com/92969676/172458369-4de6988b-c84b-4cf0-aed7-5631877fe0e0.png)
+
+![image](https://user-images.githubusercontent.com/92969676/172458311-614c3ec4-907f-48b2-b8dc-4cf34e1c3cd8.png)
+
+
+5. Перенести Declarative Pipeline в репозиторий в файл `Jenkinsfile`.
+6. Создать Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.
+7. Создать Scripted Pipeline, наполнить его скриптом из [pipeline](./pipeline).
+8. Внести необходимые изменения, чтобы Pipeline запускал `ansible-playbook` без флагов `--check --diff`, если не установлен параметр при запуске джобы (prod_run = True), по умолчанию параметр имеет значение False и запускает прогон с флагами `--check --diff`.
+9. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл `ScriptedJenkinsfile`.
+10. Отправить ссылку на репозиторий с ролью и Declarative Pipeline и Scripted Pipeline.
 
 ## Необязательная часть
 
