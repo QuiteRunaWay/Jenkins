@@ -20,13 +20,20 @@
 ## Основная часть
 
 1. Сделать Freestyle Job, который будет запускать `molecule test` из любого вашего репозитория с ролью.
-2. Сделать Declarative Pipeline Job, который будет запускать `molecule test` из любого вашего репозитория с ролью.
-3. Перенести Declarative Pipeline в репозиторий в файл `Jenkinsfile`.
-4. Создать Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.
-5. Создать Scripted Pipeline, наполнить его скриптом из [pipeline](./pipeline).
-6. Внести необходимые изменения, чтобы Pipeline запускал `ansible-playbook` без флагов `--check --diff`, если не установлен параметр при запуске джобы (prod_run = True), по умолчанию параметр имеет значение False и запускает прогон с флагами `--check --diff`.
-7. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл `ScriptedJenkinsfile`.
-8. Отправить ссылку на репозиторий с ролью и Declarative Pipeline и Scripted Pipeline.
+
+Успешно:
+
+![image](https://user-images.githubusercontent.com/92969676/172453249-34fd5205-2475-4aa3-97e8-ad83a2219153.png)
+
+![image](https://user-images.githubusercontent.com/92969676/172453106-a2a26af7-a3a4-471c-948a-b8169cee536e.png)
+
+3. Сделать Declarative Pipeline Job, который будет запускать `molecule test` из любого вашего репозитория с ролью.
+4. Перенести Declarative Pipeline в репозиторий в файл `Jenkinsfile`.
+5. Создать Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.
+6. Создать Scripted Pipeline, наполнить его скриптом из [pipeline](./pipeline).
+7. Внести необходимые изменения, чтобы Pipeline запускал `ansible-playbook` без флагов `--check --diff`, если не установлен параметр при запуске джобы (prod_run = True), по умолчанию параметр имеет значение False и запускает прогон с флагами `--check --diff`.
+8. Проверить работоспособность, исправить ошибки, исправленный Pipeline вложить в репозиторий в файл `ScriptedJenkinsfile`.
+9. Отправить ссылку на репозиторий с ролью и Declarative Pipeline и Scripted Pipeline.
 
 ## Необязательная часть
 
