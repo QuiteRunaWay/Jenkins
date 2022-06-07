@@ -7,11 +7,15 @@
 
 Установлен:
 
-![image](https://user-images.githubusercontent.com/92969676/171812040-2ab951aa-fa8a-482c-86e2-7bee33f5548c.png)
-
+![image](https://user-images.githubusercontent.com/92969676/172392815-ec5d729a-c4d1-46e4-92ea-abfeb3c2e6c5.png)
 
 4. Запустить и проверить работоспособность.
 5. Сделать первоначальную настройку.
+
+Всё сделано:
+
+![image](https://user-images.githubusercontent.com/92969676/172393315-710443b0-0cea-498f-bef8-aa1f95353f27.png)
+
 
 ## Основная часть
 
