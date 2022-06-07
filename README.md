@@ -46,6 +46,8 @@
 
 ![image](https://user-images.githubusercontent.com/92969676/172462015-b5467911-c1da-4a46-a910-701c40b50469.png)
 
+![image](https://user-images.githubusercontent.com/92969676/172462264-7b60b095-3cd7-4caf-920a-f72fa9d58ac3.png)
+
 
 8. Создать Scripted Pipeline, наполнить его скриптом из [pipeline](./pipeline).
 
