@@ -1,0 +1,18 @@
+node('Test'){
+        stage('Git checkout'){
+        git credentialsId: 'ae07b783-44bb-4fa2-84cf-b7bb2e3d32c4', url: 'git@github.com:aragastmatb/example-playbook.git'
+    }   
+        stage('Role Install'){
+         sh 'ansible-galaxy role install -r requirements.yml'
+    }
+    stage('Service true'){
+        prod_run=false
+    }
+    stage('Run playbook'){
+        if (prod_run){
+            sh 'ansible-playbook site.yml --check --diff -i inventory/prod.yml'
+        }
+        else{
+            sh 'ansible-playbook site.yml  -i inventory/prod.yml'}
+    }
+}
